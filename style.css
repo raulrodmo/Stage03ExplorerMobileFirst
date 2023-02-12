@@ -10,13 +10,14 @@
 }
 
 body{
-  max-width: 38.4rem;
   margin: 0 auto;
   background: #EFF1FF;
 }
 
+
 header{
   width: 100%;  
+  min-height: 100vh;
   background: #8E9AAF;
 
   display: flex;
@@ -48,13 +49,17 @@ header div h1{
   color: #ffffff;
 }
 
+header div .text{
+  display: none;
+}
+
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-main p{
+main div .text{
   max-width: 30.5rem;
 
   margin: 1.4rem auto 3rem;
@@ -67,10 +72,12 @@ main p{
 }
 
 .cream_type{
-  width: 90%;
+  width: fit-content;
   position: relative;
 
-  margin: 0 auto 3.2rem;
+  margin-bottom:3.2rem;
+
+  border-radius: 2rem;
 }
 
 .cream_type h2{
@@ -95,24 +102,233 @@ main p{
 
 .cream_type img{
   width: 100%;
+
+  padding: 0 1rem;
+
+  animation-name: downTop;
+  animation-delay: 200ms;
+  animation-duration: 700ms;
 }
 
-footer{
+.cream_type img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 700ms;
+}
+
+.cards div:nth-child(3){
   display: none;
 }
 
+.cards div:nth-child(4){
+  display: none;
+}
 
+.contact{
+  display: none;
+}
 
-@media (min-width: 500px){
+@media (min-width: 600px) {
+  
   body{
     max-width: 100%;
+    max-height: 100vh;
   }
 
-  footer{
-    display:block;
+  #page{
+    display: flex;
+    gap:3.2rem
   }
 
-  footer p{
-    font-family: sans-serif;
+  header{ 
+    margin: 0;
+  }
+
+  main .text{
+    display: none;
+  }
+
+  header div .text{
+    display: block;
+
+    width: 95%;
+
+    margin: 1.4rem auto 3rem;
+  
+    font: 'Roboto';
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+  }
+
+  .cream_type{
+    margin: .5rem auto;
+  }
+
+  .cream_type h2{
+    margin: 0 auto;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .cream_type img{
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 960px){
+  
+  header{ 
+    width: 100%;  
+
+    margin: 0;
+  }
+
+  header div img{
+    margin: 1rem auto;
+  }
+
+  header div h1{ 
+    font-size: 3rem;
+    letter-spacing: 0;
+    line-height: 3rem;
+
+    margin-bottom: 1rem;
+  }
+
+  main{
+    width: 100%;
+    margin-top: 2rem
+  }
+
+  .cream_type{
+    width: fit-content;
+    margin: 0;
+  }
+
+  .cards{
+    display: grid;
+    margin: 3rem auto;
+    grid-template-areas: "A B"
+    "F B"
+    "F E";
+    gap: 3.2rem;
+
+  }
+
+  .cards div:nth-child(1){
+    grid-area: A;
+  }
+
+  .cards div:nth-child(2){
+    grid-area: B;
+  }
+
+  .cards div:nth-child(5){
+    grid-area: E;
+  }
+
+  .cards div:nth-child(6){
+    grid-area: F;
+  }
+
+  .cream_type h2{
+    display: none;
+  }
+
+  .cream_type img{
+    width: 80%;
+    border-radius: 2rem;
+    animation-name: downTop;
+    animation-delay: 200ms;
+    animation-duration: 700ms;
+  }
+
+  .contact{
+    display: block;
+  }
+
+  .contact p{
+    margin: 2rem auto 0;
+
+    font-family: 'Open sans';
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #4A4E69;
+  }
+
+  .contact p span{
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1060px){
+
+  header{ 
+    width: 45%; 
+  }
+
+  header div img{
+    width: 30%;
+  }
+
+  header div h1{ 
+    width: 100%;
+
+    padding: .8rem 0;
+    margin: 0;
+  }
+
+  header div .text{
+    width: 90%;
+
+    margin: 2rem auto;
+  }
+
+.cards{
+  grid-template-areas: "A B C"
+  "D B F"
+  "D E F";
+
+  margin: 0 auto;
+}
+
+  .cards div:nth-child(3){
+    grid-area: C;
+    display: block;
+  }
+
+  .cards div:nth-child(4){
+    grid-area: D;
+    display: block;
+  }
+
+}
+
+@keyframes topDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-15px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes downTop {
+  0% {
+      opacity: 0;
+      transform: translateY(+15px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
 }

@@ -32,7 +32,7 @@ O projeto consiste em uma página de divulgação de uma loja de sorvetescremes.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/ritEJFOTMymgjUDjzqKz5y/Stage-03---Grid-com-anima%C3%A7%C3%B5es-(Copy)?node-id=0%3A1&t=vBqRq9HoQBUjAmOd-0>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
