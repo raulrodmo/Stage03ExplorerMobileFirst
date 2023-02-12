@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto consiste em uma página de divulgação de uma loja de sorvetescremes.
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://spacecream-raulrodmo.netlify.app/)
 
 ## 🔖 Layout
 
