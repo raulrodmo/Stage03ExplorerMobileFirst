@@ -17,7 +17,6 @@ body{
 
 header{
   width: 100%;  
-  min-height: 100vh;
   background: #8E9AAF;
 
   display: flex;
@@ -59,7 +58,7 @@ main{
   justify-content: center;
 }
 
-main div .text{
+main .text{
   max-width: 30.5rem;
 
   margin: 1.4rem auto 3rem;
@@ -75,7 +74,7 @@ main div .text{
   width: fit-content;
   position: relative;
 
-  margin-bottom:3.2rem;
+  margin: 0 auto 3.2rem;
 
   border-radius: 2rem;
 }
@@ -137,15 +136,20 @@ main div .text{
 
   #page{
     display: flex;
-    gap:3.2rem
+    gap:1rem;
   }
 
   header{ 
     margin: 0;
+    min-height: 100vh;
   }
 
   main .text{
     display: none;
+  }
+
+  .cards{
+    margin-right: 1rem;
   }
 
   header div .text{
@@ -197,6 +201,10 @@ main div .text{
     line-height: 3rem;
 
     margin-bottom: 1rem;
+  }
+
+  .page{
+    gap:3.2rem;
   }
 
   main{
