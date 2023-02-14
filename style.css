@@ -15,6 +15,9 @@ body{
   background: #EFF1FF;
 }
 
+#page{
+  overflow: hidden;
+}
 
 header{
   width: 100%;  
